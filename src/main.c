@@ -62,11 +62,16 @@ t_List				*invert_list(t_node *node)
 	return (new);
 }
 
-int				main(void)
+int				main(int argc, char **argv)
 {
 	t_data		*data;
 
-	data = get_map("map");
+	if (argc != 2)
+	{
+		printf("Usage : map_file\n");
+		return (-1);
+	}
+	data = get_map(argv[1]);
 	if (data == NULL)
 		return (-1);
 	t_node *node;

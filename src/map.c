@@ -6,7 +6,7 @@
 /*   By: fgundlac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/07/19 17:19:44 by fgundlac          #+#    #+#             */
-/*   Updated: 2014/07/19 23:09:01 by fgundlac         ###   ########.fr       */
+/*   Updated: 2014/07/19 23:45:19 by fgundlac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,6 +152,8 @@ t_data				*get_map(const char *const filename)
 	if (set_special(data) == -1)
 	{
 		printf("Invalid map\nNo start or end OR multiple start or end set\n");
+		printf("EMPY CHAR = %c\nWALL CHAR = %c\n", WALKABLE_CHAR, WALL_CHAR);
+		printf("START CHAR = %c\nEND CHAR = %c\n", START_CHAR, END_CHAR);
 		return (NULL);
 	}
 	return (data);

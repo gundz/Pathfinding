@@ -38,8 +38,8 @@ clean:
 	@ make clean -C $(LIB_PATH)
 
 fclean: clean
-	rm -rf $(NAME)
-	make fclean -C $(LIB_PATH)
+	@ rm -rf $(NAME)
+	@ make fclean -C $(LIB_PATH)
 
 re: fclean all
 

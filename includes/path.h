@@ -16,15 +16,15 @@
 # define TESTED_DISPLAY_CHAR		"\033[07m "
 # define WAY_DISPLAY_CHAR			"\033[07m "
 
-#define START	"\033["
-#define END		"m"
-#define WHITE	"0"
-#define RED		"31"
-#define GREEN	"32"
-#define YELLOW	"33"
-#define BLUE	"34"
-#define CYAN	"36"
-#define MANGETA "35"
+#define START						"\033["
+#define END							"m"
+#define WHITE						"0"
+#define RED							"31"
+#define GREEN						"32"
+#define YELLOW						"33"
+#define BLUE						"34"
+#define CYAN						"36"
+#define MANGETA						"35"
 
 # include <libft.h>
 
