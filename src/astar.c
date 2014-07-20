@@ -39,13 +39,6 @@ t_node				*get_smallest_f_score(t_List *const list)
 	return (ret);
 }
 
-int					max(const int a, const int b)
-{
-	if (a < b)
-		return (b);
-	return (a);
-}
-
 int					heuristic(t_node *const current, t_node *const end)
 {
 	int				dx;
@@ -53,7 +46,7 @@ int					heuristic(t_node *const current, t_node *const end)
 
 	dx = abs(current->x - end->x);
 	dy = abs(current->y - end->y);
-	return (NODE_VALUE * max(dx, dy));
+	return (NODE_VALUE * get_max(dx, dy));
 }
 
 void				calculate_current(t_data *data, t_node *current, t_node *parent, int g_score)
