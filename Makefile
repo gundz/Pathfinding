@@ -14,6 +14,7 @@ SRC =		main.c \
 			node.c \
 			astar.c \
 			map.c \
+			show_shell.c \
 
 LIB_PATH = libft/
 LIB_INC = $(LIB_PATH)includes
