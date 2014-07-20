@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int					remove_comp(void *a, void *b)
+int					node_comp(void *a, void *b)
 {
 	t_node			*node_a;
 	t_node			*node_b;
@@ -39,21 +39,26 @@ t_node				*get_smallest_f_score(t_List *const list)
 	return (ret);
 }
 
-int					heuristic(t_node *const current, t_node *const end)
+int					heuristic(t_data *data, t_node *const current,
+						t_node *const end)
 {
 	int				dx;
 	int				dy;
 
 	dx = abs(current->x - end->x);
 	dy = abs(current->y - end->y);
-	return (NODE_VALUE * get_max(dx, dy));
+	if (data->check_diag == 1)
+		return (NODE_VALUE * get_max(dx, dy));
+	else
+		return (NODE_VALUE * (dx + dy));
 }
 
-void				calculate_current(t_data *data, t_node *current, t_node *parent, int g_score)
+void				calculate_current(t_data *const data, t_node *current,
+						t_node *const parent, const int g_score)
 {
 	current->parent = parent;
 	current->g_score = g_score;
-	current->h_score = heuristic(current, data->end);
+	current->h_score = heuristic(data, current, data->end);
 	current->f_score = current->h_score + current->g_score;
 
 }
@@ -65,7 +70,7 @@ void				astar_check(t_data *const data,
 	int				tmp;
 	int				(*comp_func)(void *, void *);
 
-	comp_func = remove_comp;
+	comp_func = node_comp;
 	current->way = TESTED_CHAR;
 	if (current->walkable == WALL_CHAR ||
 			ft_in_lst(data->close_lst, comp_func, current))
@@ -93,25 +98,28 @@ void				check_neighbours(t_data *const data, t_node *const current)
 		astar_check(data, current, current->x, current->y + 1);
 	if (current->y - 1 >= 0)
 		astar_check(data, current, current->x, current->y - 1);
-
-	if (current->x - 1 >= 0 && current->y - 1 >= 0)
-		astar_check(data, current, current->x - 1, current->y - 1);
-	if (current->x + 1 < data->map_x && current->y - 1 >= 0)
-		astar_check(data, current, current->x + 1, current->y - 1);
-	if (current->x - 1 >= 0 && current->y + 1 < data->map_y)
-		astar_check(data, current, current->x - 1, current->y + 1);
-	if (current->x + 1 < data->map_x && current->y + 1 < data->map_y)
-		astar_check(data, current, current->x + 1, current->y + 1);
+	if (data->check_diag == 1)
+	{
+		if (current->x - 1 >= 0 && current->y - 1 >= 0)
+			astar_check(data, current, current->x - 1, current->y - 1);
+		if (current->x + 1 < data->map_x && current->y - 1 >= 0)
+			astar_check(data, current, current->x + 1, current->y - 1);
+		if (current->x - 1 >= 0 && current->y + 1 < data->map_y)
+			astar_check(data, current, current->x - 1, current->y + 1);
+		if (current->x + 1 < data->map_x && current->y + 1 < data->map_y)
+			astar_check(data, current, current->x + 1, current->y + 1);
+	}
 }
 
-t_node				*astar(t_data *const data)
+t_node				*astar(t_data *const data, char check_diag)
 {
 	t_node			*current;
 	int				(*comp_function)(void *, void *);
 
-	comp_function = remove_comp;
+	comp_function = node_comp;
 	data->open_lst = NULL;
 	data->close_lst = NULL;
+	data->check_diag = check_diag;
 	ft_lstadd_back(&data->open_lst, ft_lstnew(data->start, sizeof(t_node *)));
 	while (data->open_lst != NULL)
 	{

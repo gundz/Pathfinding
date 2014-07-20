@@ -66,16 +66,16 @@ int				main(int argc, char **argv)
 {
 	t_data		*data;
 
-	if (argc != 2)
+	if (argc != 3)
 	{
-		printf("Usage : map_file\n");
+		printf("Usage : map_file check_diag(0|1)\n");
 		return (-1);
 	}
 	data = get_map(argv[1]);
 	if (data == NULL)
 		return (-1);
 	t_node *node;
-	node = astar(data);
+	node = astar(data, ft_atoi(argv[2]));
 	if (node == NULL)
 		printf("chibre !\n");
 	else

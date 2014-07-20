@@ -2,7 +2,7 @@ NAME = Pathfinding
 
 CC = gcc
 
-CFLAGS = -Wall -Werror -Wextra -g
+CFLAGS = -Wall -Werror -Wextra -g -O3
 
 PATH_INC = includes/
 
