@@ -2,6 +2,7 @@
 # define PATH_H
 
 # define NODE_VALUE					100
+# define NODE_DIAG_VALUE			100
 
 # define START_CHAR					'2'
 # define END_CHAR					'3'
