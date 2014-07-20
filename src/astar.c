@@ -111,7 +111,22 @@ void				check_neighbours(t_data *const data, t_node *const current)
 	}
 }
 
-t_node				*astar(t_data *const data, char check_diag)
+t_List				*invert_list(t_node *node)
+{
+	t_List			*new;
+
+	new = NULL;
+	while (node != NULL)
+	{
+		ft_lstadd_front(&new, ft_lstnew(node, sizeof(t_node *)));
+		if (node->parent == NULL)
+			break ;
+		node = node->parent;
+	}
+	return (new);
+}
+
+t_List				*astar(t_data *const data, char check_diag)
 {
 	t_node			*current;
 	int				(*comp_function)(void *, void *);
@@ -128,7 +143,7 @@ t_node				*astar(t_data *const data, char check_diag)
 		ft_lstadd_back(&data->close_lst, ft_lstnew(current, sizeof(t_node *)));
 		check_neighbours(data, current);
 		if (ft_in_lst(data->close_lst, comp_function, data->end))
-			return (current);
+			return (invert_list(current));
 	}
 	return (NULL);
 }

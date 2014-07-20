@@ -47,24 +47,10 @@ void			set_way(t_node ***map, t_List *way)
 	}
 }
 
-t_List				*invert_list(t_node *node)
-{
-	t_List			*new;
-
-	new = NULL;
-	while (node != NULL)
-	{
-		ft_lstadd_front(&new, ft_lstnew(node, sizeof(t_node *)));
-		if (node->parent == NULL)
-			break ;
-		node = node->parent;
-	}
-	return (new);
-}
-
 int				main(int argc, char **argv)
 {
 	t_data		*data;
+	t_List		*way;
 
 	if (argc != 3)
 	{
@@ -74,13 +60,12 @@ int				main(int argc, char **argv)
 	data = get_map(argv[1]);
 	if (data == NULL)
 		return (-1);
-	t_node *node;
-	node = astar(data, ft_atoi(argv[2]));
-	if (node == NULL)
+	way = astar(data, ft_atoi(argv[2]));
+	if (way == NULL)
 		printf("chibre !\n");
 	else
 	{
-		set_way(data->map, invert_list(node));
+		set_way(data->map, way);
 	}
 	show_way(data);
 	return (0);
