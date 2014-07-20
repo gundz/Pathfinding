@@ -6,7 +6,7 @@
 /*   By: fgundlac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/07/19 16:53:51 by fgundlac          #+#    #+#             */
-/*   Updated: 2014/07/19 18:42:33 by fgundlac         ###   ########.fr       */
+/*   Updated: 2014/07/20 20:29:59 by fgundlac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,25 @@
 #include <stdio.h>
 #include <unistd.h>
 
-void			gen_map(int x, int y, char *filename)
+void			gen_map(int x, int y, int start_x, int start_y,
+					int end_x, int end_y, char *filename)
 {
 	int			fd;
 	int			i = 0;
 	int			j = 0;
 
-	fd = open(filename, O_WRONLY | O_CREAT);
+	fd = open(filename, O_WRONLY | O_CREAT, 0644);
 	while (i < y)
 	{
 		j = 0;
 		while (j < x)
 		{
-			write(fd, "0", 1);
+			if (j == start_x && i == start_y)
+				write(fd, "2", 1);
+			else if (j == end_x && i == end_y)
+				write(fd, "3", 1);
+			else
+				write(fd, "0", 1);
 			j++;
 		}
 		i++;
@@ -37,12 +43,13 @@ void			gen_map(int x, int y, char *filename)
 
 int				main(int argc, char **argv)
 {
-	if (argc == 4)
+	if (argc == 8)
 	{
-		gen_map(atoi(argv[1]), atoi(argv[2]), argv[3]);
+		gen_map(atoi(argv[1]), atoi(argv[2]), atoi(argv[3]),
+				atoi(argv[4]), atoi(argv[5]), atoi(argv[6]), argv[7]);
 		return (-1);
 	}
 	else
-		printf("Usage : X Y filename\n");
+		printf("Usage : X Y START_X START_Y END_X END_Y filename\n");
 	return (0);
 }
