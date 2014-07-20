@@ -21,7 +21,7 @@ LIB_NAME = libft.a
 
 OBJ = $(patsubst %.c, $(PATH_OBJ)/%.o, $(SRC))
 
-all: lib $(NAME)
+all: lib $(NAME) map_gen
 
 $(NAME): $(OBJ)
 	@ $(CC) $(OBJ) $(CFLAGS) -I $(LIB_INC) -I $(PATH_INC) $(LIB_PATH)$(LIB_NAME) -o $(NAME)
@@ -32,6 +32,9 @@ $(PATH_OBJ)/%.o: $(addprefix $(PATH_SRC)/, %.c)
 
 lib:
 	@ make -C $(LIB_PATH)
+
+map_gen:
+	@ make -C map_gen/
 
 clean:
 	@ rm -rf $(PATH_OBJ)

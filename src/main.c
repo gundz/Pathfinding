@@ -75,7 +75,7 @@ int				main(int argc, char **argv)
 	if (data == NULL)
 		return (-1);
 	t_node *node;
-	node = astar(data->map, data->start, data->end, data->map_x, data->map_y);
+	node = astar(data);
 	if (node == NULL)
 		printf("chibre !\n");
 	else

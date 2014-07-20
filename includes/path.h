@@ -1,6 +1,8 @@
 #ifndef PATH_H
 # define PATH_H
 
+# define NODE_VALUE					100
+
 # define START_CHAR					'2'
 # define END_CHAR					'3'
 
@@ -49,13 +51,15 @@ typedef struct				s_data
 	int						map_x;
 	int						map_y;
 	t_List					*map_raw;
+	t_List					*open_lst;
+	t_List					*close_lst;
 }							t_data;
 
 
-t_node					*create_node(char *name, int x, int y);
+t_node						*create_node(char *name, int x, int y);
 
-t_data					*get_map(const char *const filename);
+t_data						*get_map(const char *const filename);
 
-t_node					*astar(t_node ***map, t_node *start, t_node *end, int x, int y);
+t_node						*astar(t_data *data);
 
 #endif

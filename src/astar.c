@@ -4,9 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define NODE_VALUE 100
-
-t_node				*get_smallest_f_score(t_List *list)
+t_node				*get_smallest_f_score(t_List *const list)
 {
 	t_List			*lstwalker;
 	t_node			*tmp;
@@ -29,7 +27,7 @@ t_node				*get_smallest_f_score(t_List *list)
 	return (ret);
 }
 
-t_List				*remove_from_list(t_List *lst, char *name)
+t_List				*remove_from_list(t_List *lst, const char *const name)
 {
 	t_node			*node;
 	t_List			*tmp;
@@ -59,7 +57,7 @@ t_List				*remove_from_list(t_List *lst, char *name)
 	return (lst);
 }
 
-int				in_list(t_List *lst, char *name)
+int				in_list(t_List *lst, const char *const name)
 {
 	t_node			*node;
 
@@ -75,14 +73,14 @@ int				in_list(t_List *lst, char *name)
 	return (0);
 }
 
-int					max(int a, int b)
+int					max(const int a, const int b)
 {
 	if (a < b)
 		return (b);
 	return (a);
 }
 
-int					heuristic(t_node *current, t_node *end)
+int					heuristic(t_node *const current, t_node *const end)
 {
 	int				dx;
 	int				dy;
@@ -92,23 +90,21 @@ int					heuristic(t_node *current, t_node *end)
 	return (NODE_VALUE * max(dx, dy));
 }
 
-void				astar_check(t_node *parent, t_node ***map, t_List **open, t_List **closed, t_node *end, int x, int y)
+void				astar_check(t_data *const data,
+						t_node *const parent, const int x, const int y)
 {
-	t_node			*current;
+	t_node			*current = data->map[y][x];
 	int				tmp;
 
-	current = map[y][x];
 	current->way = TESTED_CHAR;
-	if (current->walkable == WALL_CHAR)
+	if (current->walkable == WALL_CHAR || in_list(data->close_lst, current->name))
 		return ;
-	if (in_list(*closed, current->name))
-		return ;
-	if (!in_list(*open, current->name))
+	if (!in_list(data->open_lst, current->name))
 	{
-		ft_lstadd_back(open, ft_lstnew(current, sizeof(t_node *)));
+		ft_lstadd_back(&data->open_lst, ft_lstnew(current, sizeof(t_node *)));
 		current->parent = parent;
 		current->g_score = parent->g_score + NODE_VALUE;
-		current->h_score = heuristic(current, end);
+		current->h_score = heuristic(current, data->end);
 		current->f_score = current->h_score + current->g_score;
 	}
 	else
@@ -118,44 +114,47 @@ void				astar_check(t_node *parent, t_node ***map, t_List **open, t_List **close
 		{
 			current->parent = parent;
 			current->g_score = tmp;
-			current->h_score = heuristic(current, end);
+			current->h_score = heuristic(current, data->end);
 			current->f_score = current->h_score + current->g_score;
 		}
 	}
 }
 
-t_node				*astar(t_node ***map, t_node *start, t_node *end, int x, int y)
+void				check_neighbours(t_data *const data, t_node *const current)
 {
-	t_List			*open_list = NULL;
-	t_List			*closed_list = NULL;
-	t_node			*current = NULL;
+	if (current->x - 1 >= 0)
+		astar_check(data, current, current->x - 1, current->y);
+	if (current->x + 1 < data->map_x)
+		astar_check(data, current, current->x + 1, current->y);
+	if (current->y + 1 < data->map_y)
+		astar_check(data, current, current->x, current->y + 1);
+	if (current->y - 1 >= 0)
+		astar_check(data, current, current->x, current->y - 1);
 
-	ft_lstadd_back(&open_list, ft_lstnew(start, sizeof(t_node *)));
-	while (open_list != NULL)
+	if (current->x - 1 >= 0 && current->y - 1 >= 0)
+		astar_check(data, current, current->x - 1, current->y - 1);
+	if (current->x + 1 < data->map_x && current->y - 1 >= 0)
+		astar_check(data, current, current->x + 1, current->y - 1);
+	if (current->x - 1 >= 0 && current->y + 1 < data->map_y)
+		astar_check(data, current, current->x - 1, current->y + 1);
+	if (current->x + 1 < data->map_x && current->y + 1 < data->map_y)
+		astar_check(data, current, current->x + 1, current->y + 1);
+}
+
+t_node				*astar(t_data *const data)
+{
+	t_node			*current;
+
+	data->open_lst = NULL;
+	data->close_lst = NULL;
+	ft_lstadd_back(&data->open_lst, ft_lstnew(data->start, sizeof(t_node *)));
+	while (data->open_lst != NULL)
 	{
-		current = get_smallest_f_score(open_list);
-		open_list = remove_from_list(open_list, current->name);
-		ft_lstadd_back(&closed_list, ft_lstnew(current, sizeof(t_node *)));
-
-		if (current->x - 1 >= 0)
-			astar_check(current, map, &open_list, &closed_list, end, current->x - 1, current->y);
-		if (current->x + 1 < x)
-			astar_check(current, map, &open_list, &closed_list, end, current->x + 1, current->y);
-		if (current->y + 1 < y)
-			astar_check(current, map, &open_list, &closed_list, end, current->x, current->y + 1);
-		if (current->y - 1 >= 0)
-			astar_check(current, map, &open_list, &closed_list, end, current->x, current->y - 1);
-
-		if (current->x - 1 >= 0 && current->y - 1 >= 0)
-			astar_check(current, map, &open_list, &closed_list, end, current->x - 1, current->y - 1);
-		if (current->x + 1 < x && current->y - 1 >= 0)
-			astar_check(current, map, &open_list, &closed_list, end, current->x + 1, current->y - 1);
-		if (current->x - 1 >= 0 && current->y + 1 < y)
-			astar_check(current, map, &open_list, &closed_list, end, current->x - 1, current->y + 1);
-		if (current->x + 1 < x && current->y + 1 < y)
-			astar_check(current, map, &open_list, &closed_list, end, current->x + 1, current->y + 1);
-
-		if (in_list(closed_list, end->name))
+		current = get_smallest_f_score(data->open_lst);
+		data->open_lst = remove_from_list(data->open_lst, current->name);
+		ft_lstadd_back(&data->close_lst, ft_lstnew(current, sizeof(t_node *)));
+		check_neighbours(data, current);
+		if (in_list(data->close_lst, data->end->name))
 			return (current);
 	}
 	return (NULL);
