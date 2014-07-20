@@ -4,6 +4,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int					remove_comp(void *a, void *b)
+{
+	t_node			*node_a;
+	t_node			*node_b;
+
+	node_a = (t_node *)a;
+	node_b = (t_node *)b;
+	if (ft_strcmp(node_a->name, node_b->name) == 0)
+		return (0);
+	return (-1);
+}
+
 t_node				*get_smallest_f_score(t_List *const list)
 {
 	t_List			*lstwalker;
@@ -27,22 +39,6 @@ t_node				*get_smallest_f_score(t_List *const list)
 	return (ret);
 }
 
-int				in_list(t_List *lst, const char *const name)
-{
-	t_node			*node;
-
-	while (lst != NULL)
-	{
-		node = lst->content;
-		if (ft_strcmp(node->name, name) == 0)
-			return (1);
-		if (lst->next == NULL)
-			break ;
-		lst = lst->next;
-	}
-	return (0);
-}
-
 int					max(const int a, const int b)
 {
 	if (a < b)
@@ -60,10 +56,10 @@ int					heuristic(t_node *const current, t_node *const end)
 	return (NODE_VALUE * max(dx, dy));
 }
 
-void				calculate_current(t_data *data, t_node *current, t_node *parent)
+void				calculate_current(t_data *data, t_node *current, t_node *parent, int g_score)
 {
 	current->parent = parent;
-	current->g_score = parent->g_score + NODE_VALUE;
+	current->g_score = g_score;
 	current->h_score = heuristic(current, data->end);
 	current->f_score = current->h_score + current->g_score;
 
@@ -74,28 +70,23 @@ void				astar_check(t_data *const data,
 {
 	t_node			*current = data->map[y][x];
 	int				tmp;
+	int				(*comp_func)(void *, void *);
 
+	comp_func = remove_comp;
 	current->way = TESTED_CHAR;
-	if (current->walkable == WALL_CHAR || in_list(data->close_lst, current->name))
+	if (current->walkable == WALL_CHAR ||
+			ft_in_lst(data->close_lst, comp_func, current))
 		return ;
-	if (!in_list(data->open_lst, current->name))
+	if (!ft_in_lst(data->open_lst, comp_func, current))
 	{
 		ft_lstadd_back(&data->open_lst, ft_lstnew(current, sizeof(t_node *)));
-		current->parent = parent;
-		current->g_score = parent->g_score + NODE_VALUE;
-		current->h_score = heuristic(current, data->end);
-		current->f_score = current->h_score + current->g_score;
+		calculate_current(data, current, parent, parent->g_score + NODE_VALUE);
 	}
 	else
 	{
 		tmp = parent->g_score + NODE_VALUE;
 		if (tmp < current->g_score)
-		{
-			current->parent = parent;
-			current->g_score = tmp;
-			current->h_score = heuristic(current, data->end);
-			current->f_score = current->h_score + current->g_score;
-		}
+			calculate_current(data, current, parent, tmp);
 	}
 }
 
@@ -120,18 +111,6 @@ void				check_neighbours(t_data *const data, t_node *const current)
 		astar_check(data, current, current->x + 1, current->y + 1);
 }
 
-int					remove_comp(void *a, void *b)
-{
-	t_node			*node_a;
-	t_node			*node_b;
-
-	node_a = (t_node *)a;
-	node_b = (t_node *)b;
-	if (ft_strcmp(node_a->name, node_b->name) == 0)
-		return (0);
-	return (-1);
-}
-
 t_node				*astar(t_data *const data)
 {
 	t_node			*current;
@@ -147,7 +126,7 @@ t_node				*astar(t_data *const data)
 		data->open_lst = ft_lst_remove(data->open_lst, comp_function, current);
 		ft_lstadd_back(&data->close_lst, ft_lstnew(current, sizeof(t_node *)));
 		check_neighbours(data, current);
-		if (in_list(data->close_lst, data->end->name))
+		if (ft_in_lst(data->close_lst, comp_function, data->end))
 			return (current);
 	}
 	return (NULL);
