@@ -4,3 +4,4 @@
 [submodule "Libft"]
 	path = Libft
 	url = https://github.com/gundz/Libft.git
+	branch = master
