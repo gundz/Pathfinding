@@ -27,36 +27,6 @@ t_node				*get_smallest_f_score(t_List *const list)
 	return (ret);
 }
 
-t_List				*remove_from_list(t_List *lst, const char *const name)
-{
-	t_node			*node;
-	t_List			*tmp;
-	t_List			*previous;
-
-	if (lst == NULL)
-		return (lst);
-	previous = lst;
-	node = previous->content;
-	if (ft_strcmp(node->name, name) == 0)
-	{
-		lst = previous->next;
-		return (lst);
-	}
-	tmp = previous->next;
-	while (tmp != NULL)
-	{
-		node = tmp->content;
-		if (ft_strcmp(node->name, name) == 0)
-		{
-			previous->next = tmp->next;
-			return (lst);
-		}
-		previous = tmp;
-		tmp = tmp->next;
-	}
-	return (lst);
-}
-
 int				in_list(t_List *lst, const char *const name)
 {
 	t_node			*node;
@@ -88,6 +58,15 @@ int					heuristic(t_node *const current, t_node *const end)
 	dx = abs(current->x - end->x);
 	dy = abs(current->y - end->y);
 	return (NODE_VALUE * max(dx, dy));
+}
+
+void				calculate_current(t_data *data, t_node *current, t_node *parent)
+{
+	current->parent = parent;
+	current->g_score = parent->g_score + NODE_VALUE;
+	current->h_score = heuristic(current, data->end);
+	current->f_score = current->h_score + current->g_score;
+
 }
 
 void				astar_check(t_data *const data,
@@ -141,17 +120,31 @@ void				check_neighbours(t_data *const data, t_node *const current)
 		astar_check(data, current, current->x + 1, current->y + 1);
 }
 
+int					remove_comp(void *a, void *b)
+{
+	t_node			*node_a;
+	t_node			*node_b;
+
+	node_a = (t_node *)a;
+	node_b = (t_node *)b;
+	if (ft_strcmp(node_a->name, node_b->name) == 0)
+		return (0);
+	return (-1);
+}
+
 t_node				*astar(t_data *const data)
 {
 	t_node			*current;
+	int				(*comp_function)(void *, void *);
 
+	comp_function = remove_comp;
 	data->open_lst = NULL;
 	data->close_lst = NULL;
 	ft_lstadd_back(&data->open_lst, ft_lstnew(data->start, sizeof(t_node *)));
 	while (data->open_lst != NULL)
 	{
 		current = get_smallest_f_score(data->open_lst);
-		data->open_lst = remove_from_list(data->open_lst, current->name);
+		data->open_lst = ft_lst_remove(data->open_lst, comp_function, current);
 		ft_lstadd_back(&data->close_lst, ft_lstnew(current, sizeof(t_node *)));
 		check_neighbours(data, current);
 		if (in_list(data->close_lst, data->end->name))
