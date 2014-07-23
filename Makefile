@@ -3,12 +3,14 @@ NAME = Pathfinding
 CC = gcc
 
 CFLAGS = -Wall -Werror -Wextra -g -O3
+CFLAGS = `SDL2/SDL2/bin/sdl2-config --cflags`
+LFLAGS = `SDL2/SDL2/bin/sdl2-config --libs`
 
-PATH_INC = includes/
+PATH_INC =	includes/
 
-PATH_SRC = src
+PATH_SRC =	src
 
-PATH_OBJ = obj
+PATH_OBJ =	obj
 
 SRC =		main.c \
 			node.c \
@@ -16,9 +18,9 @@ SRC =		main.c \
 			map.c \
 			show_shell.c \
 
-LIB_PATH = libft/
-LIB_INC = $(LIB_PATH)includes
-LIB_NAME = libft.a
+LIB_PATH =	libft/
+LIB_INC =	$(LIB_PATH)includes
+LIB_NAME =	libft.a
 
 OBJ = $(patsubst %.c, $(PATH_OBJ)/%.o, $(SRC))
 
@@ -44,6 +46,9 @@ clean:
 fclean: clean
 	@ rm -rf $(NAME)
 	@ make fclean -C $(LIB_PATH)
+
+SDL2:
+	make -C SDL2/
 
 re: fclean all
 
