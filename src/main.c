@@ -14,7 +14,10 @@ int				main(int argc, char **argv)
 		return (-1);
 	}
 	data = get_map(argv[1]);
+	if (data == NULL)
+		return (-1);
 	way = astar(data, ft_atoi(argv[2]));
-	show_shell(data, way);
+	if (way != NULL)
+		show_shell(data, way);
 	return (0);
 }
