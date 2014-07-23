@@ -3,6 +3,8 @@
 #include <libft.h>
 #include <path.h>
 
+#include <SDL.h>
+
 int				main(int argc, char **argv)
 {
 	t_data		*data;
@@ -17,7 +19,5 @@ int				main(int argc, char **argv)
 	if (data == NULL)
 		return (-1);
 	way = astar(data, ft_atoi(argv[2]));
-	if (way != NULL)
-		show_shell(data, way);
 	return (0);
 }

@@ -6,7 +6,7 @@
 #    By: fgundlac <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/01/19 23:20:58 by fgundlac          #+#    #+#              #
-#    Updated: 2014/07/23 18:08:29 by fgundlac         ###   ########.fr        #
+#    Updated: 2014/07/23 18:14:50 by fgundlac         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,6 +58,7 @@ SDL2_Mixer:
 	rm -rf SDL2-2.0.1
 
 clean:
+	rm -rf SDL2
 	rm -rf $(SDL2)
 	rm -rf $(SDL2).tar.gz
 

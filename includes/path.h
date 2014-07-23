@@ -56,9 +56,8 @@ typedef struct				s_data
 	char					check_diag;
 }							t_data;
 
-
 t_node						*create_node(char *name, int x, int y);
 t_data						*get_map(const char *const filename);
 t_List						*astar(t_data *data, char check_diag);
-void						show_shell(t_data *data, t_List *way);
+
 #endif
