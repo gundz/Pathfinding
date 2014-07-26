@@ -49,61 +49,61 @@ int					heuristic(t_node *const current,
 	return (dx * dx + dy * dy);
 }
 
-void				calculate_current(t_data *const data, t_node *const current,
+void				calculate_current(t_path *const path, t_node *const current,
 						t_node *const parent, const int g_score)
 {
 	current->parent = parent;
 	current->g_score = g_score;
-	current->h_score = heuristic(current, data->end) * NODE_VALUE;
+	current->h_score = heuristic(current, path->end) * NODE_VALUE;
 	current->f_score = current->h_score + current->g_score;
 }
 
-void				astar_check(t_data *const data,
+void				astar_check(t_path *const path,
 						t_node *const parent, const int x, const int y)
 {
-	t_node			*current = data->map[y][x];
+	t_node			*current = path->map[y][x];
 	int				tmp;
 	int				(*comp_func)(void *, void *);
 
 	comp_func = node_comp;
 	current->way = TESTED_CHAR;
 	if (current->walkable == WALL_CHAR ||
-			ft_in_lst(data->close_lst, comp_func, current))
+			ft_in_lst(path->close_lst, comp_func, current))
 		return ;
-	if (!ft_in_lst(data->open_lst, comp_func, current))
+	if (!ft_in_lst(path->open_lst, comp_func, current))
 	{
-		ft_lstadd_back(&data->open_lst, ft_lstnew(current, sizeof(t_node *)));
-		calculate_current(data, current, parent, parent->g_score + NODE_VALUE);
+		ft_lstadd_back(&path->open_lst, ft_lstnew(current, sizeof(t_node *)));
+		calculate_current(path, current, parent, parent->g_score + NODE_VALUE);
 	}
 	else
 	{
 		tmp = parent->g_score + NODE_VALUE;
 		if (tmp < current->g_score)
-			calculate_current(data, current, parent, tmp);
+			calculate_current(path, current, parent, tmp);
 	}
 }
 
-void				check_neighbours(t_data *const data, t_node *const current)
+void				check_neighbours(t_path *const path, t_node *const current)
 {
 	if (current->x - 1 >= 0)
-		astar_check(data, current, current->x - 1, current->y);
-	if (current->y + 1 < data->map_y)
-		astar_check(data, current, current->x, current->y + 1);
-	if (current->x + 1 < data->map_x)
-		astar_check(data, current, current->x + 1, current->y);
+		astar_check(path, current, current->x - 1, current->y);
+	if (current->y + 1 < path->map_y)
+		astar_check(path, current, current->x, current->y + 1);
+	if (current->x + 1 < path->map_x)
+		astar_check(path, current, current->x + 1, current->y);
 	if (current->y - 1 >= 0)
-		astar_check(data, current, current->x, current->y - 1);
+		astar_check(path, current, current->x, current->y - 1);
 
-	if (data->check_diag == 1)
+	if (path->check_diag == 1)
 	{
 		if (current->x - 1 >= 0 && current->y - 1 >= 0)
-			astar_check(data, current, current->x - 1, current->y - 1);
-		if (current->x + 1 < data->map_x && current->y - 1 >= 0)
-			astar_check(data, current, current->x + 1, current->y - 1);
-		if (current->x - 1 >= 0 && current->y + 1 < data->map_y)
-			astar_check(data, current, current->x - 1, current->y + 1);
-		if (current->x + 1 < data->map_x && current->y + 1 < data->map_y)
-			astar_check(data, current, current->x + 1, current->y + 1);
+			astar_check(path, current, current->x - 1, current->y - 1);
+		if (current->x + 1 < path->map_x && current->y - 1 >= 0)
+			astar_check(path, current, current->x + 1, current->y - 1);
+		if (current->x - 1 >= 0 && current->y + 1 < path->map_y)
+			astar_check(path, current, current->x - 1, current->y + 1);
+		if (current->x + 1 < path->map_x && current->y + 1 < path->map_y)
+			astar_check(path, current, current->x + 1, current->y + 1);
 	}
 }
 
@@ -122,23 +122,23 @@ t_List				*invert_list(t_node *node)
 	return (new);
 }
 
-t_List				*astar(t_data *const data, char check_diag)
+t_List				*astar(t_path *const path, char check_diag)
 {
 	t_node			*current;
 	int				(*comp_function)(void *, void *);
 
 	comp_function = node_comp;
-	data->open_lst = NULL;
-	data->close_lst = NULL;
-	data->check_diag = check_diag;
-	ft_lstadd_back(&data->open_lst, ft_lstnew(data->start, sizeof(t_node *)));
-	while (data->open_lst != NULL)
+	path->open_lst = NULL;
+	path->close_lst = NULL;
+	path->check_diag = check_diag;
+	ft_lstadd_back(&path->open_lst, ft_lstnew(path->start, sizeof(t_node *)));
+	while (path->open_lst != NULL)
 	{
-		current = get_smallest_f_score(data->open_lst);
-		data->open_lst = ft_lst_remove(data->open_lst, comp_function, current);
-		ft_lstadd_back(&data->close_lst, ft_lstnew(current, sizeof(t_node *)));
-		check_neighbours(data, current);
-		if (ft_in_lst(data->close_lst, comp_function, data->end))
+		current = get_smallest_f_score(path->open_lst);
+		path->open_lst = ft_lst_remove(path->open_lst, comp_function, current);
+		ft_lstadd_back(&path->close_lst, ft_lstnew(current, sizeof(t_node *)));
+		check_neighbours(path, current);
+		if (ft_in_lst(path->close_lst, comp_function, path->end))
 			return (invert_list(current));
 	}
 	return (NULL);

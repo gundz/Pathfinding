@@ -16,7 +16,6 @@ SRC =		main.c \
 			node.c \
 			astar.c \
 			map.c \
-			show_shell.c \
 
 LIB_PATH =	Libft/
 LIB_INC =	$(LIB_PATH)includes
@@ -52,4 +51,4 @@ SDL2:
 
 re: fclean all
 
-.PHONY: clean fclean re
+.PHONY: clean fclean re SDL2

@@ -31,24 +31,24 @@ t_List				*get_file(const char *const filename)
 	return (map_raw);
 }
 
-int					check_map(t_data *const data)
+int					check_map(t_path *const path)
 {
 	int				x_tmp = 0;
 	t_List			*lstwalker;
 
-	lstwalker = data->map_raw;
+	lstwalker = path->map_raw;
 	if (lstwalker != NULL)
 	{
-		data->map_y++;
-		data->map_x = ft_strlen((char *)lstwalker->content);
+		path->map_y++;
+		path->map_x = ft_strlen((char *)lstwalker->content);
 	}
 	if (lstwalker->next != NULL)
 		lstwalker = lstwalker->next;
 	while (lstwalker != NULL)
 	{
-		data->map_y++;
+		path->map_y++;
 		x_tmp = ft_strlen((char *)lstwalker->content);
-		if (x_tmp != data->map_x)
+		if (x_tmp != path->map_x)
 			return (-1);
 		if (lstwalker->next == NULL)
 			break ;
@@ -57,23 +57,23 @@ int					check_map(t_data *const data)
 	return (0);
 }
 
-void				create_map(t_data *const data)
+void				create_map(t_path *const path)
 {
 	t_node			***map;
 	int				i;
 	int				j;
 	int				k;
 
-	if (!(map = (t_node ***)malloc(sizeof(t_node **) * data->map_y)))
+	if (!(map = (t_node ***)malloc(sizeof(t_node **) * path->map_y)))
 		return ;
 	i = 0;
 	k = 0;
-	while (i < data->map_y)
+	while (i < path->map_y)
 	{
-		if (!(map[i] = (t_node **)malloc(sizeof(t_node *) * data->map_x)))
+		if (!(map[i] = (t_node **)malloc(sizeof(t_node *) * path->map_x)))
 			return ;
 		j = 0;
-		while (j < data->map_x)
+		while (j < path->map_x)
 		{
 			map[i][j] = create_node(ft_itoa(k), j, i);
 			j++;
@@ -81,46 +81,46 @@ void				create_map(t_data *const data)
 		}
 		i++;
 	}
-	data->map = map;
+	path->map = map;
 }
 
-int					set_start_end_walk(t_data *const data,
+int					set_start_end_walk(t_path *const path,
 		const char c, const int x, const int y)
 {
 	if (c == START_CHAR)
 	{
-		if (data->start != NULL)
+		if (path->start != NULL)
 			return (-1);
-		data->start = data->map[y][x];
-		data->map[y][x]->walkable = WALKABLE_CHAR;
+		path->start = path->map[y][x];
+		path->map[y][x]->walkable = WALKABLE_CHAR;
 	}
 	else if (c == END_CHAR)
 	{
-		if (data->end != NULL)
+		if (path->end != NULL)
 			return (-1);
-		data->end = data->map[y][x];
-		data->map[y][x]->walkable = WALKABLE_CHAR;
+		path->end = path->map[y][x];
+		path->map[y][x]->walkable = WALKABLE_CHAR;
 	}
 	else
-		data->map[y][x]->walkable = c;
+		path->map[y][x]->walkable = c;
 	return (0);
 }
 
-int					set_special(t_data *const data)
+int					set_special(t_path *const path)
 {
 	t_List			*lstwalker;
 	char			*tmp;
 	int				x;
 	int				y = 0;
 
-	lstwalker = data->map_raw;
+	lstwalker = path->map_raw;
 	while (lstwalker != NULL)
 	{
 		tmp = lstwalker->content;
 		x = 0;
 		while (tmp[x] != '\0')
 		{
-			if (set_start_end_walk(data, tmp[x], x, y) == -1)
+			if (set_start_end_walk(path, tmp[x], x, y) == -1)
 				return (-1);
 			x++;
 		}
@@ -129,32 +129,32 @@ int					set_special(t_data *const data)
 			break ;
 		lstwalker = lstwalker->next;
 	}
-	if (data->start == NULL || data->end == NULL)
+	if (path->start == NULL || path->end == NULL)
 		return (-1);
 	return (0);
 }
 
-t_data				*get_map(const char *const filename)
+t_path				*get_map(const char *const filename)
 {
-	t_data			*data;
+	t_path			*path;
 
-	if (!(data = (t_data *)malloc(sizeof(t_data))))
+	if (!(path = (t_path *)malloc(sizeof(t_path))))
 		return (NULL);
-	data->start = NULL;
-	data->end = NULL;
-	data->map_raw = get_file(filename);
-	if (check_map(data) != 0)
+	path->start = NULL;
+	path->end = NULL;
+	path->map_raw = get_file(filename);
+	if (check_map(path) != 0)
 	{
 		printf("Invalid map\nInvalid map integrity\n");
 		return (NULL);
 	}
-	create_map(data);
-	if (set_special(data) == -1)
+	create_map(path);
+	if (set_special(path) == -1)
 	{
 		printf("Invalid map\nNo start or end OR multiple start or end set\n");
 		printf("EMPY CHAR = %c\nWALL CHAR = %c\n", WALKABLE_CHAR, WALL_CHAR);
 		printf("START CHAR = %c\nEND CHAR = %c\n", START_CHAR, END_CHAR);
 		return (NULL);
 	}
-	return (data);
+	return (path);
 }

@@ -7,7 +7,7 @@
 
 int				main(int argc, char **argv)
 {
-	t_data		*data;
+	t_path		*path;
 	t_List		*way;
 
 	if (argc != 3)
@@ -15,9 +15,9 @@ int				main(int argc, char **argv)
 		printf("Usage : map_file check_diag(0|1)\n");
 		return (-1);
 	}
-	data = get_map(argv[1]);
-	if (data == NULL)
+	path = get_map(argv[1]);
+	if (path == NULL)
 		return (-1);
-	way = astar(data, ft_atoi(argv[2]));
+	way = astar(path, ft_atoi(argv[2]));
 	return (0);
 }

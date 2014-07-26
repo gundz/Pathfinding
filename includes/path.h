@@ -43,7 +43,7 @@ typedef struct				s_node
 	char					way;
 }							t_node;
 
-typedef struct				s_data
+typedef struct				s_path
 {
 	t_node					*start;
 	t_node					*end;
@@ -54,10 +54,10 @@ typedef struct				s_data
 	t_List					*open_lst;
 	t_List					*close_lst;
 	char					check_diag;
-}							t_data;
+}							t_path;
 
 t_node						*create_node(char *name, int x, int y);
-t_data						*get_map(const char *const filename);
-t_List						*astar(t_data *data, char check_diag);
+t_path						*get_map(const char *const filename);
+t_List						*astar(t_path *path, char check_diag);
 
 #endif
