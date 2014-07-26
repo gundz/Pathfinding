@@ -18,7 +18,7 @@ SRC =		main.c \
 			map.c \
 			show_shell.c \
 
-LIB_PATH =	libft/
+LIB_PATH =	Libft/
 LIB_INC =	$(LIB_PATH)includes
 LIB_NAME =	libft.a
 
