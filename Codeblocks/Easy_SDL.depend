@@ -1,0 +1,2280 @@
+# depslib dependency file v1.0
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\libft\src\ft_atoi.c
+	"libft.h"
+
+1390171318 e:\dropbox\programmation\wolf3d\wolffinal\libft\includes\libft.h
+	<stdlib.h>
+	<stdarg.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\libft\src\ft_isdigit.c
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\libft\src\ft_memset.c
+	<string.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\libft\src\ft_putchar_fd.c
+	<unistd.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\libft\src\ft_putendl_fd.c
+	"libft.h"
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\libft\src\ft_putstr_fd.c
+	"libft.h"
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\libft\src\ft_strcmp.c
+	<stddef.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\libft\src\ft_strlen.c
+	"libft.h"
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\libft\src\ft_strncmp.c
+	"libft.h"
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\libft\src\ft_strstr.c
+	"libft.h"
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\libft\src\get_next_line.c
+	<libft.h>
+	<unistd.h>
+	<stdlib.h>
+
+1391107377 source:e:\dropbox\programmation\wolf3d\wolffinal\src\change_maps.c
+	<engine.h>
+	<math.h>
+
+1390170743 e:\dropbox\programmation\wolf3d\wolffinal\include\engine.h
+	<SDL.h>
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\begin_code.h
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\close_code.h
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<intrin.h>
+	<libkern/OSAtomic.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_pixels.h
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\detection.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\display.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\draw.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\engine.c
+	<SDL_image.h>
+	<engine.h>
+	<libft.h>
+
+1376156342 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_abs.c
+
+1391107240 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_clear_map.c
+	<engine.h>
+	<stdlib.h>
+
+1391107248 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_clear_map_data.c
+	<engine.h>
+	<stdlib.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_draw_floor.c
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_get_file_size.c
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_get_grp.c
+	<unistd.h>
+	<fcntl.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_get_grp_size.c
+	<unistd.h>
+	<fcntl.h>
+	<engine.h>
+	<libft.h>
+
+1393893672 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_get_intersection.c
+	<engine.h>
+	<math.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_get_map.c
+	<unistd.h>
+	<fcntl.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_get_map_size.c
+	<fcntl.h>
+	<unistd.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_get_player_pos.c
+	<fcntl.h>
+	<unistd.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_get_textures.c
+	<unistd.h>
+	<fcntl.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_get_textures_size.c
+	<unistd.h>
+	<fcntl.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_open_error.c
+	<libft.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_raycasting_tools.c
+	<engine.h>
+	<math.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_set_maze.c
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_sp.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\ft_sr.c
+	<SDL.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\hud.c
+	<engine.h>
+	<SDL.h>
+	<SDL_image.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\init.c
+	<engine.h>
+	<libft.h>
+
+1391107405 source:e:\dropbox\programmation\wolf3d\wolffinal\src\input.c
+	<engine.h>
+	<stdlib.h>
+
+1391108677 source:e:\dropbox\programmation\wolf3d\wolffinal\src\main.c
+	<engine.h>
+	<stdlib.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\map.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\move_camera.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\move_player.c
+	<engine.h>
+	<math.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\player_status.c
+	<engine.h>
+
+1393894280 source:e:\dropbox\programmation\wolf3d\wolffinal\src\raycasting.c
+	<engine.h>
+	<math.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\set_options.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\programmation\wolf3d\wolffinal\src\sounds.c
+	<SDL.h>
+	<SDL_mixer.h>
+	<libft.h>
+
+1376156425 e:\dropbox\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1393893590 e:\dropbox\programmation\wolf3d\wolffinal\includes\engine.h
+	<SDL.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\libft\src\ft_atoi.c
+	"libft.h"
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\libft\src\ft_isdigit.c
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\libft\src\ft_memset.c
+	<string.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\libft\src\ft_putchar_fd.c
+	<unistd.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\libft\src\ft_putendl_fd.c
+	"libft.h"
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\libft\src\ft_putstr_fd.c
+	"libft.h"
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\libft\src\ft_strcmp.c
+	<stddef.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\libft\src\ft_strlen.c
+	"libft.h"
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\libft\src\ft_strncmp.c
+	"libft.h"
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\libft\src\ft_strstr.c
+	"libft.h"
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\libft\src\get_next_line.c
+	<libft.h>
+	<unistd.h>
+	<stdlib.h>
+
+1391107377 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\change_maps.c
+	<engine.h>
+	<math.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\detection.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\display.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\draw.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\engine.c
+	<SDL_image.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_abs.c
+
+1391107240 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_clear_map.c
+	<engine.h>
+	<stdlib.h>
+
+1391107248 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_clear_map_data.c
+	<engine.h>
+	<stdlib.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_draw_floor.c
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_get_file_size.c
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_get_grp.c
+	<unistd.h>
+	<fcntl.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_get_grp_size.c
+	<unistd.h>
+	<fcntl.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_get_map.c
+	<unistd.h>
+	<fcntl.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_get_map_size.c
+	<fcntl.h>
+	<unistd.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_get_player_pos.c
+	<fcntl.h>
+	<unistd.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_get_textures.c
+	<unistd.h>
+	<fcntl.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_get_textures_size.c
+	<unistd.h>
+	<fcntl.h>
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_open_error.c
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_raycasting_tools.c
+	<engine.h>
+	<math.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_set_maze.c
+	<engine.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_sp.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_sr.c
+	<SDL.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\hud.c
+	<engine.h>
+	<SDL.h>
+	<SDL_image.h>
+
+1391107405 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\input.c
+	<engine.h>
+	<stdlib.h>
+
+1391108677 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\main.c
+	<engine.h>
+	<stdlib.h>
+	<libft.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\map.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\move_camera.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\move_player.c
+	<engine.h>
+	<math.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\player_status.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\set_options.c
+	<engine.h>
+
+1390170743 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\sounds.c
+	<SDL.h>
+	<SDL_mixer.h>
+	<libft.h>
+
+1390171318 e:\dropbox\42\programmation\wolf3d\wolffinal\libft\includes\libft.h
+	<stdlib.h>
+	<stdarg.h>
+
+1393893590 e:\dropbox\42\programmation\wolf3d\wolffinal\includes\engine.h
+	<SDL.h>
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\begin_code.h
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\close_code.h
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<intrin.h>
+	<libkern/OSAtomic.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_pixels.h
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376156342 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1393893672 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\ft_get_intersection.c
+	<engine.h>
+	<math.h>
+
+1393894280 source:e:\dropbox\42\programmation\wolf3d\wolffinal\src\raycasting.c
+	<engine.h>
+	<math.h>
+
+1376156425 e:\dropbox\42\programmation\wolf3d\wolffinal\sdl2_win\include\sdl2\sdl_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406933798 source:e:\dropbox\42\easy_sdl\src\main.c
+	<easy_sdl.h>
+	<SDL.h>
+	<stdio.h>
+
+1406849872 e:\dropbox\42\easy_sdl\includes\easy_sdl.h
+	<SDL.h>
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\begin_code.h
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\close_code.h
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<intrin.h>
+	<libkern/OSAtomic.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_pixels.h
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382587623 e:\dropbox\42\easy_sdl\sdl2\sdl2_win\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849778 source:e:\dropbox\42\easy_sdl\src\sdl_draw.c
+	<easy_sdl.h>
+	<SDL.h>
+
+1406849224 source:e:\dropbox\42\easy_sdl\src\sdl_events.c
+	<easy_sdl.h>
+	<SDL.h>
+	<stdlib.h>
+
+1406849224 source:e:\dropbox\42\easy_sdl\src\sdl_init.c
+	<easy_sdl.h>
+	<SDL.h>
+	<stdio.h>
+	<string.h>
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\begin_code.h
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\close_code.h
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<intrin.h>
+	<libkern/OSAtomic.h>
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_pixels.h
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406849224 e:\dropbox\42\easy_sdl\codeblocks\sdl2_win\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406499305 source:e:\dropbox\42\easy_sdl\src\fps_counter.c
+	<easy_sdl.h>
+	<stdio.h>
+
+1406849224 source:e:\dropbox\42\easy_sdl\src\sdl_fps_counter.c
+	<easy_sdl.h>
+	<stdio.h>
+
+1406934314 e:\dropbox\42\easy_sdl\esdl\includes\\easy_sdl.h
+	<SDL.h>
+
+1406934373 source:e:\dropbox\42\easy_sdl\esdl\src\sdl_draw.c
+	<easy_sdl.h>
+	<SDL.h>
+
+1406859468 source:e:\dropbox\42\easy_sdl\esdl\src\sdl_events.c
+	<easy_sdl.h>
+	<SDL.h>
+	<stdlib.h>
+
+1406859468 source:e:\dropbox\42\easy_sdl\esdl\src\sdl_fps_counter.c
+	<easy_sdl.h>
+	<stdio.h>
+
+1406934314 source:e:\dropbox\42\easy_sdl\esdl\src\sdl_init.c
+	<easy_sdl.h>
+	<SDL.h>
+	<stdio.h>
+	<string.h>
+
+1406935371 source:e:\dropbox\42\pathfinding\pathfinding\src\astar.c
+	<path.h>
+	<libft.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1406935371 e:\dropbox\42\pathfinding\pathfinding\includes\path.h
+	<libft.h>
+
+1406935509 e:\dropbox\42\pathfinding\pathfinding\libft\includes\libft.h
+	<stdlib.h>
+	<stdarg.h>
+
+1406935302 source:e:\dropbox\42\pathfinding\pathfinding\src\main.c
+	<easy_sdl.h>
+	<SDL.h>
+	<stdio.h>
+
+1406935302 e:\dropbox\42\pathfinding\pathfinding\esdl\includes\\easy_sdl.h
+	<SDL.h>
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\begin_code.h
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\close_code.h
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<intrin.h>
+	<libkern/OSAtomic.h>
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_pixels.h
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406934672 e:\dropbox\42\pathfinding\pathfinding\codeblocks\sdl2_win\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1406935371 source:e:\dropbox\42\pathfinding\pathfinding\src\map.c
+	<path.h>
+	<libft.h>
+	<fcntl.h>
+	<stdio.h>
+
+1406935320 source:e:\dropbox\42\pathfinding\pathfinding\src\node.c
+	<libft.h>
+	<path.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_add_tab.c
+	<libft.h>
+	<stdlib.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_atoi.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_bzero.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_cacat.c
+	<libft.h>
+	<stdarg.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_char_to_str.c
+	"libft.h"
+	<stdlib.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_countwords.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_fgets.c
+	<libft.h>
+	<unistd.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_free_tab.c
+	<libft.h>
+	<stdlib.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_get_next_line.c
+	<libft.h>
+	<stdlib.h>
+	<unistd.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_in_lst.c
+	<libft.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_intab.c
+	<libft.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_isalnum.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_isalpha.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_isascii.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_isdigit.c
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_isprint.c
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_itoa.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_lst_remove.c
+	<libft.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_lstadd_back.c
+	<libft.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_lstadd_front.c
+	<libft.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_lstfree.c
+	<libft.h>
+	<stdlib.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_lstnew.c
+	<libft.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_lstput.c
+	<libft.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_memalloc.c
+	<stdlib.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_memccpy.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_memchr.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_memcmp.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_memcpy.c
+	<stddef.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_memdel.c
+	<stdlib.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_memmove.c
+	"libft.h"
+	<stdlib.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_memset.c
+	<string.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_putchar.c
+	<unistd.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_putchar_fd.c
+	<unistd.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_putendl.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_putendl_fd.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_putnbr.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_putnbr_fd.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_putstr.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_putstr_fd.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_puttab.c
+	<libft.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_str_uniq.c
+	<stdlib.h>
+	<libft.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strcat.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strchr.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strclr.c
+	<string.h>
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strcmp.c
+	<stddef.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strcpy.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strdel.c
+	<stdlib.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strdup.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strequ.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_striter.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_striteri.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strjoin.c
+	"libft.h"
+	<stdlib.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strlcat.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strlen.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strmap.c
+	"libft.h"
+	<stdlib.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strmapi.c
+	"libft.h"
+	<stdlib.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strncat.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strncmp.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strncpy.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strnequ.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strnew.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strnstr.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strrchr.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strrev.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strsplit.c
+	<libft.h>
+	<stdlib.h>
+	<stdio.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strstr.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strsub.c
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_strtrim.c
+	<stdlib.h>
+	"libft.h"
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_tablen.c
+	<stddef.h>
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_tolower.c
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\ft_toupper.c
+
+1406935509 source:e:\dropbox\42\pathfinding\pathfinding\libft\src\get_max.c
+

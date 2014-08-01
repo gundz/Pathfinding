@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Easy_SDL" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Easy_SDL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="SDL2_WIN/include/SDL2" />
+					<Add directory="../includes" />
+					<Add directory="../eSDL/includes/" />
+				</Compiler>
+				<Linker>
+					<Add library="mingw32" />
+					<Add library="SDL2main" />
+					<Add library="SDL2.dll" />
+					<Add library="SDL2_image" />
+					<Add library="SDL2_image.dll" />
+					<Add library="SDL2_mixer" />
+					<Add library="SDL2_mixer.dll" />
+					<Add directory="SDL2_WIN/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../eSDL/includes/easy_sdl.h" />
+		<Unit filename="../eSDL/src/sdl_draw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../eSDL/src/sdl_events.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../eSDL/src/sdl_fps_counter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../eSDL/src/sdl_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
